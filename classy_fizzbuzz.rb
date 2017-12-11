@@ -23,8 +23,5 @@ class FizzBuzz
 end
 
 
-
-(1..100).step(1) do |n|
-  fizzbuzz = FizzBuzz.new(3,5)
-  puts fizzbuzz.process(n)
-end
+fizzbuzz = FizzBuzz.new(3,5)
+(1..100).each {|n| puts fizzbuzz.process(n) }
