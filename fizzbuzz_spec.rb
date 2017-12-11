@@ -33,6 +33,12 @@ describe FizzBuzz do
     expect(fizzbuzz.process(12)).to eq('FizzBuzz')
     expect(fizzbuzz.process(3)).to eq('Fizz')
     expect(fizzbuzz.process(8)).to eq('Buzz')
+
+    fizzbuzz = FizzBuzz.new(6,9)
+    expect(fizzbuzz.process(54)).to eq('FizzBuzz')
+    expect(fizzbuzz.process(12)).to eq('Fizz')
+    expect(fizzbuzz.process(18)).to eq('FizzBuzz')
+    expect(fizzbuzz.process(27)).to eq('Buzz')
   end
 
 end
